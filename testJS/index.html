@@ -62,7 +62,7 @@
         <div class="card">
             <div class="card-body">
                 <h3>Test toAppHandler</h3>
-                <button type="button" class="btn btn-success" onclick="sendToAppHandler();">TO APP HANDLER</button>
+                <button type="button" class="btn btn-success" onclick="sendToAppHandler();">TO APP</button>
             </div>
         </div>
 
@@ -172,7 +172,8 @@
 
         function sendToAppHandler() {
             var string = "{\"event\":\"logout\"}"
-
+            console.log(string);
+            
             // for Android
             try {
                 if (JSInterface) JSInterface.viewClose(string);
