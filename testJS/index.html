@@ -176,12 +176,12 @@
             
             // for Android
             try {
-                if (JSInterface) JSInterface.viewClose(string);
+                if (JSInterface) JSInterface.toAppHandler(string);
             } catch (err) {}
 
             // for iOS
             try {
-                window.webkit.messageHandlers.viewClose.postMessage(string);
+                window.webkit.messageHandlers.toAppHandler.postMessage(string);
             } catch (err) {}
         }
 
